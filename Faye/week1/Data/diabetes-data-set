@@ -1,0 +1,231 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Diabetes Dataset | Kaggle</title>
+  <meta charset="utf-8" />
+    <meta name="robots" content="index, follow" />
+  <meta name="description" content="This dataset is originally from the N. Inst. of Diabetes &amp; Diges. &amp; Kidney Dis." />
+  <meta name="turbolinks-cache-control" content="no-cache" />
+    <meta name="keywords" content="diabetes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0">
+  <meta name="theme-color" content="#008ABC" />
+  <script nonce="3P79yt4cXbPxerlRQkUScw==" type="text/javascript">
+    window["pageRequestStartTime"] = 1654635377159;
+    window["pageRequestEndTime"] = 1654635377247;
+    window["initialPageLoadStartTime"] = new Date().getTime();
+  </script>
+  <link rel="preconnect" href="https://www.google-analytics.com" crossorigin="anonymous" /><link rel="preconnect" href="https://stats.g.doubleclick.net" /><link rel="preconnect" href="https://storage.googleapis.com" /><link rel="preconnect" href="https://apis.google.com" />
+  <link href="/static/images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+  <link rel="manifest" href="/static/json/manifest.json" crossorigin="use-credentials">
+
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/icon?family=Google+Material+Icons"
+    rel="preload" as="style" />
+  <link href="https://fonts.googleapis.com/css?family=Inter:400,400i,500,500i,600,600i,700,700i"
+    rel="preload" as="style" />
+  <link href="https://fonts.googleapis.com/icon?family=Google+Material+Icons"
+    rel="stylesheet" media="print" id="async-google-font-1" />
+  <link href="https://fonts.googleapis.com/css?family=Inter:400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet" media="print" id="async-google-font-2" />
+  <script nonce="3P79yt4cXbPxerlRQkUScw==" type="text/javascript">
+    const styleSheetIds = ["async-google-font-1", "async-google-font-2"];
+    styleSheetIds.forEach(function (id) {
+      document.getElementById(id).addEventListener("load", function() {
+        this.media = "all";
+      });
+    });
+  </script>
+
+    <link rel="canonical" href="/mathchi/diabetes-data-set" />
+    <link rel="stylesheet" type="text/css" href="/static/assets/vendor.css?v=1f6d99669e949b7dfa2b" />
+    <link rel="stylesheet" type="text/css" href="/static/assets/app.css?v=2e8679600fefe703804f" />
+  
+    
+ 
+      <script nonce="3P79yt4cXbPxerlRQkUScw==">
+        try{(function(a,s,y,n,c,h,i,d,e){d=s.createElement("style");
+        d.appendChild(s.createTextNode(""));s.head.appendChild(d);d=d.sheet;
+        y=y.map(x => d.insertRule(x + "{ opacity: 0 !important }"));
+        h.start=1*new Date;h.end=i=function(){y.forEach(x => x<d.cssRules.length ? d.deleteRule(x) : {})};
+        (a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
+        })(window,document,['.site-header-react__nav'],'dataLayer',2000,{'GTM-52LNT9S':true});}catch(ex){}
+    </script>
+    <script nonce="3P79yt4cXbPxerlRQkUScw==">
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-12629138-1', {
+            'optimize_id': 'GTM-52LNT9S',
+            'displayFeaturesTask': null,
+            'send_page_view': false,
+            'content_group1': 'Datasets'
+        });
+    </script>
+    <script nonce="3P79yt4cXbPxerlRQkUScw==" async src="https://www.googletagmanager.com/gtag/js?id=UA-12629138-1"></script>
+
+  
+    
+    <meta property="og:url" content="/mathchi/diabetes-data-set" />
+    <meta property="og:title" content="Diabetes Dataset" />
+    <meta property="og:description" content="This dataset is originally from the N. Inst. of Diabetes &amp; Diges. &amp; Kidney Dis." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://storage.googleapis.com/kaggle-datasets-images/818300/1400440/55cfe32b82e60672bdf5a1e8ad0ffd61/dataset-card.jpg?t=2020-08-05-21-49-18" />
+    <meta property="fb:app_id" content="2665027677054710" />
+
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@kaggledatasets" />
+
+
+  <meta name="twitter:site" content="@Kaggle" /> 
+  
+    
+    <script nonce="3P79yt4cXbPxerlRQkUScw==" type="application/ld+json">{"@context":"http://schema.org/","@type":"Dataset","name":"Diabetes Dataset","description":"### Context\n\nThis dataset is originally from the National Institute of Diabetes and Digestive and Kidney Diseases. The objective is to predict based on diagnostic measurements whether a patient has diabetes.\n\n\n### Content\n\nSeveral constraints were placed on the selection of these instances from a larger database. In particular, all patients here are females at least 21 years old of Pima Indian heritage.\n\n- Pregnancies: Number of times pregnant \n- Glucose: Plasma glucose concentration a 2 hours in an oral glucose tolerance test \n- BloodPressure: Diastolic blood pressure (mm Hg) \n- SkinThickness: Triceps skin fold thickness (mm) \n- Insulin: 2-Hour serum insulin (mu U/ml) \n- BMI: Body mass index (weight in kg/(height in m)^2) \n- DiabetesPedigreeFunction: Diabetes pedigree function \n- Age: Age (years) \n- Outcome: Class variable (0 or 1)\n\n#### Sources:\n   (a) Original owners: National Institute of Diabetes and Digestive and\n                        Kidney Diseases\n   (b) Donor of database: Vincent Sigillito (vgs@aplcen.apl.jhu.edu)\n                          Research Center, RMI Group Leader\n                          Applied Physics Laboratory\n                          The Johns Hopkins University\n                          Johns Hopkins Road\n                          Laurel, MD 20707\n                          (301) 953-6231\n   (c) Date received: 9 May 1990\n\n#### Past Usage:\n    1. Smith,~J.~W., Everhart,~J.~E., Dickson,~W.~C., Knowler,~W.~C., \\&amp;\n       Johannes,~R.~S. (1988). Using the ADAP learning algorithm to forecast\n       the onset of diabetes mellitus.  In {\\it Proceedings of the Symposium\n       on Computer Applications and Medical Care} (pp. 261--265).  IEEE\n       Computer Society Press.\n\n       The diagnostic, binary-valued variable investigated is whether the\n       patient shows signs of diabetes according to World Health Organization\n       criteria (i.e., if the 2 hour post-load plasma glucose was at least \n       200 mg/dl at any survey  examination or if found during routine medical\n       care).   The population lives near Phoenix, Arizona, USA.\n\n       Results: Their ADAP algorithm makes a real-valued prediction between\n       0 and 1.  This was transformed into a binary decision using a cutoff of \n       0.448.  Using 576 training instances, the sensitivity and specificity\n       of their algorithm was 76% on the remaining 192 instances.\n\n#### Relevant Information:\n      Several constraints were placed on the selection of these instances from\n      a larger database.  In particular, all patients here are females at\n      least 21 years old of Pima Indian heritage.  ADAP is an adaptive learning\n      routine that generates and executes digital analogs of perceptron-like\n      devices.  It is a unique algorithm; see the paper for details.\n\n#### Number of Instances: 768\n\n#### Number of Attributes: 8 plus class \n\n#### For Each Attribute: (all numeric-valued)\n   1. Number of times pregnant\n   2. Plasma glucose concentration a 2 hours in an oral glucose tolerance test\n   3. Diastolic blood pressure (mm Hg)\n   4. Triceps skin fold thickness (mm)\n   5. 2-Hour serum insulin (mu U/ml)\n   6. Body mass index (weight in kg/(height in m)^2)\n   7. Diabetes pedigree function\n   8. Age (years)\n   9. Class variable (0 or 1)\n\n#### Missing Attribute Values: Yes\n\n#### Class Distribution: (class value 1 is interpreted as \"tested positive for\n   diabetes\")\n","url":"https://www.kaggle.com/mathchi/diabetes-data-set","version":1,"keywords":["subject, health and fitness, health, health conditions, diabetes"],"license":{"@type":"CreativeWork","name":"CC0: Public Domain","url":"https://creativecommons.org/publicdomain/zero/1.0/"},"identifier":["818300"],"includedInDataCatalog":{"@type":"DataCatalog","name":"Kaggle","url":"https://www.kaggle.com"},"creator":{"@type":"Person","name":"Mehmet Akturk","url":"https://www.kaggle.com/mathchi","image":"https://storage.googleapis.com/kaggle-avatars/thumbnails/3650837-kg.jpg"},"distribution":[{"@type":"DataDownload","requiresSubscription":true,"encodingFormat":"zip","fileFormat":"zip","contentUrl":"https://www.kaggle.com/datasets/mathchi/diabetes-data-set/download","contentSize":"9128 bytes"}],"commentCount":1,"dateModified":"2020-08-05T21:27:01.953Z","discussionUrl":"https://www.kaggle.com/mathchi/diabetes-data-set/discussion","alternateName":"This dataset is originally from the N. Inst. of Diabetes &amp; Diges. &amp; Kidney Dis.","isAccessibleForFree":true,"thumbnailUrl":"https://storage.googleapis.com/kaggle-datasets-images/818300/1400440/55cfe32b82e60672bdf5a1e8ad0ffd61/dataset-card.jpg?t=2020-08-05-21-49-18","interactionStatistic":[{"@type":"InteractionCounter","interactionType":"http://schema.org/CommentAction","userInteractionCount":1},{"@type":"InteractionCounter","interactionType":"http://schema.org/DownloadAction","userInteractionCount":24064},{"@type":"InteractionCounter","interactionType":"http://schema.org/ViewAction","userInteractionCount":180474},{"@type":"InteractionCounter","interactionType":"http://schema.org/LikeAction","userInteractionCount":260}]}</script>
+
+
+  
+    
+
+  
+    
+    
+<script nonce="3P79yt4cXbPxerlRQkUScw==" type="text/javascript">
+    var Kaggle = window.Kaggle || {};
+
+    Kaggle.Current = {
+        antiForgeryToken: 'CfDJ8GeXgbEwE85OtAFpY1z4yyUuHa1TJy70WGwNO2qzAy8wZafJ4v5G7Hg6zKF11Lu33jJ4tFRnrGdntlQ5uUHtkGbYcpr29bGf_ZZ21oQJzDOWfw',
+        isAnonymous: true,
+        analyticsToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTQ2MzYyNzcsIlVzZXJJZCI6MH0.hWR5TumOYO_6XKBL0sEQHVch-W8YIdK1K8doIrysXmg',
+        analyticsTokenExpiry: 15,
+        
+        
+        
+        
+        
+        
+        
+        enableRapidash: true, 
+        
+    }
+        Kaggle.Current.log = function(){};
+        Kaggle.Current.warn = function(){};
+
+    const decodeUserProperty = function (escapedUserProperty) {
+        escapedUserProperty = escapedUserProperty || "";
+        try {
+            const textVersion = new DOMParser().parseFromString(escapedUserProperty, "text/html").documentElement.textContent;
+            if (textVersion) {
+                return textVersion;
+            }
+        } catch(ex) {}
+        return escapedUserProperty;
+    }
+    Kaggle.Current.userDisplayName = decodeUserProperty(Kaggle.Current.userDisplayNameEscaped);
+    Kaggle.Current.userEmail = decodeUserProperty(Kaggle.Current.userEmailEscaped); 
+</script>
+
+    
+
+<script nonce="3P79yt4cXbPxerlRQkUScw==" type="text/javascript">
+    var Kaggle = window.Kaggle || {};
+    Kaggle.PageMessages = [];
+</script>
+
+
+
+    <script nonce="3P79yt4cXbPxerlRQkUScw==">window['useKaggleAnalytics'] = true;</script>
+
+  <script id="gapi-target" nonce="3P79yt4cXbPxerlRQkUScw==" src="https://apis.google.com/js/api.js" defer
+    async></script>
+  <script nonce="3P79yt4cXbPxerlRQkUScw==" src="/static/assets/runtime.js?v=1ffd9b4000c7ac94918f" data-turbolinks-track="reload"></script>
+  <script nonce="3P79yt4cXbPxerlRQkUScw==" src="/static/assets/vendor.js?v=a2004e5f19533473e100" data-turbolinks-track="reload"></script>
+  <script nonce="3P79yt4cXbPxerlRQkUScw==" src="/static/assets/app.js?v=8e90bd5bf8d4c7237164" data-turbolinks-track="reload"></script>
+    <script nonce="3P79yt4cXbPxerlRQkUScw==" type="text/javascript">
+      window.kaggleStackdriverConfig = {
+        key: 'AIzaSyA4eNqUdRRskJsCZWVz-qL655Xa5JEMreE',
+        projectId: 'kaggle-161607',
+        service: 'web-fe',
+        version: 'ci',
+        userId: '0'
+      }
+    </script>
+</head>
+
+<body data-turbolinks="false">
+  <main>
+    
+
+
+
+
+
+
+<div id="site-container"></div>
+<div data-component-name="NavigationContainer" style="display: flex; flex-direction: column; flex: 1 0 auto;"></div><script class="kaggle-component" nonce="3P79yt4cXbPxerlRQkUScw==">var Kaggle=window.Kaggle||{};Kaggle.State=Kaggle.State||[];Kaggle.State.push({"navigationType":"BOTH_NAV"});performance && performance.mark && performance.mark("NavigationContainer.componentCouldBootstrap");</script>
+<div id="site-body" class="hide">
+    
+
+<div data-component-name="DatasetMaterialContainer" style="display: flex; flex-direction: column; flex: 1 0 auto;"></div><script class="kaggle-component" nonce="3P79yt4cXbPxerlRQkUScw==">var Kaggle=window.Kaggle||{};Kaggle.State=Kaggle.State||[];Kaggle.State.push({"basics":{"datasetId":818300,"slug":"diabetes-data-set","title":"Diabetes Dataset","description":"### Context\n\nThis dataset is originally from the National Institute of Diabetes and Digestive and Kidney Diseases. The objective is to predict based on diagnostic measurements whether a patient has diabetes.\n\n\n### Content\n\nSeveral constraints were placed on the selection of these instances from a larger database. In particular, all patients here are females at least 21 years old of Pima Indian heritage.\n\n- Pregnancies: Number of times pregnant \n- Glucose: Plasma glucose concentration a 2 hours in an oral glucose tolerance test \n- BloodPressure: Diastolic blood pressure (mm Hg) \n- SkinThickness: Triceps skin fold thickness (mm) \n- Insulin: 2-Hour serum insulin (mu U/ml) \n- BMI: Body mass index (weight in kg/(height in m)^2) \n- DiabetesPedigreeFunction: Diabetes pedigree function \n- Age: Age (years) \n- Outcome: Class variable (0 or 1)\n\n#### Sources:\n   (a) Original owners: National Institute of Diabetes and Digestive and\n                        Kidney Diseases\n   (b) Donor of database: Vincent Sigillito (vgs@aplcen.apl.jhu.edu)\n                          Research Center, RMI Group Leader\n                          Applied Physics Laboratory\n                          The Johns Hopkins University\n                          Johns Hopkins Road\n                          Laurel, MD 20707\n                          (301) 953-6231\n   (c) Date received: 9 May 1990\n\n#### Past Usage:\n    1. Smith,~J.~W., Everhart,~J.~E., Dickson,~W.~C., Knowler,~W.~C., \\\u0026\n       Johannes,~R.~S. (1988). Using the ADAP learning algorithm to forecast\n       the onset of diabetes mellitus.  In {\\it Proceedings of the Symposium\n       on Computer Applications and Medical Care} (pp. 261--265).  IEEE\n       Computer Society Press.\n\n       The diagnostic, binary-valued variable investigated is whether the\n       patient shows signs of diabetes according to World Health Organization\n       criteria (i.e., if the 2 hour post-load plasma glucose was at least \n       200 mg/dl at any survey  examination or if found during routine medical\n       care).   The population lives near Phoenix, Arizona, USA.\n\n       Results: Their ADAP algorithm makes a real-valued prediction between\n       0 and 1.  This was transformed into a binary decision using a cutoff of \n       0.448.  Using 576 training instances, the sensitivity and specificity\n       of their algorithm was 76% on the remaining 192 instances.\n\n#### Relevant Information:\n      Several constraints were placed on the selection of these instances from\n      a larger database.  In particular, all patients here are females at\n      least 21 years old of Pima Indian heritage.  ADAP is an adaptive learning\n      routine that generates and executes digital analogs of perceptron-like\n      devices.  It is a unique algorithm; see the paper for details.\n\n#### Number of Instances: 768\n\n#### Number of Attributes: 8 plus class \n\n#### For Each Attribute: (all numeric-valued)\n   1. Number of times pregnant\n   2. Plasma glucose concentration a 2 hours in an oral glucose tolerance test\n   3. Diastolic blood pressure (mm Hg)\n   4. Triceps skin fold thickness (mm)\n   5. 2-Hour serum insulin (mu U/ml)\n   6. Body mass index (weight in kg/(height in m)^2)\n   7. Diabetes pedigree function\n   8. Age (years)\n   9. Class variable (0 or 1)\n\n#### Missing Attribute Values: Yes\n\n#### Class Distribution: (class value 1 is interpreted as \u0022tested positive for\n   diabetes\u0022)\n","viewCount":180474,"downloadCount":24064,"scriptCount":124,"topicCount":1,"owner":{"id":3650837,"imageUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/3650837-kg.jpg","name":"Mehmet Akturk","profileUrl":"/mathchi","slug":"mathchi","userTier":"MASTER"},"license":{"id":1,"name":"CC0: Public Domain","url":"https://creativecommons.org/publicdomain/zero/1.0/"},"overview":"This dataset is originally from the N. Inst. of Diabetes \u0026 Diges. \u0026 Kidney Dis.","collaboratorList":{"owner":{"userId":3650837,"profileUrl":"/mathchi","thumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/3650837-kg.jpg","name":"Mehmet Akturk","slug":"mathchi","userTier":"MASTER","type":"OWNER"}},"coverImageUrl":"https://storage.googleapis.com/kaggle-datasets-images/818300/1400440/55cfe32b82e60672bdf5a1e8ad0ffd61/dataset-cover.jpg?t=2020-08-05-21-49-18","data":{"totalSize":9128,"isFileset":true,"canSeeDownload":true,"firestorePath":"v8tdy0v71IWCBdBwvGGk/versions/HNBbDlrmmR56gJd6ZEcn","downloadUrl":"/datasets/mathchi/mathchi/download?datasetVersionNumber=1","versionId":1433199,"id":838850},"voteCount":260,"medalUrl":"/static/images/medals/datasets/goldl@2x.png","downloadUrl":"/datasets/mathchi/diabetes-data-set/download","lastUpdateTime":"2020-08-05T21:27:01.953Z","datasetVersionNumber":1,"creatorDisplayName":"Mehmet Akturk","cardImageUrl":"https://storage.googleapis.com/kaggle-datasets-images/818300/1400440/55cfe32b82e60672bdf5a1e8ad0ffd61/dataset-card.jpg?t=2020-08-05-21-49-18","categories":{"tags":[{"id":16383,"name":"diabetes","fullPath":"subject \u003E health and fitness \u003E health \u003E health conditions \u003E diabetes","listingUrl":"/datasets?group=public\u0026tagids=16383","description":"","datasetCount":1521,"notebookCount":560,"tagUrl":"/tags/diabetes","displayName":"Diabetes"}]},"datasetExternalUrl":"https://www.kaggle.com/datasets/mathchi/diabetes-data-set","forumId":833406,"datasetVersionId":1400440,"canCreateTasks":true,"moderationStatus":"PRIVATED_MODERATION_STATUS_NO_ABUSE","lastVersionNumber":1,"diffType":"VERSIONED"},"@wf": "Datasets.DatasetMaterialDtoWireFormat3"});performance && performance.mark && performance.mark("DatasetMaterialContainer.componentCouldBootstrap");</script>
+<script nonce="3P79yt4cXbPxerlRQkUScw==" type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+    "HTML-CSS": {
+    preferredFont: "TeX",
+    availableFonts: ["STIX", "TeX"],
+    linebreaks: {
+    automatic: true
+    },
+    EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50)
+    },
+    tex2jax: {
+    inlineMath: [["\\(", "\\)"], ["\\\\(", "\\\\)"]],
+    displayMath: [["$$", "$$"], ["\\[", "\\]"]],
+    processEscapes: true,
+    ignoreClass: "tex2jax_ignore|dno"
+    },
+    TeX: {
+    noUndefined: {
+    attributes: {
+    mathcolor: "red",
+    mathbackground: "#FFEEEE",
+    mathsize: "90%"
+    }
+    }
+    },
+    Macros: {
+    href: "{}"
+    },
+    skipStartupTypeset: true,
+    messageStyle: "none",
+    extensions: [],
+    });
+</script>
+<script type="text/javascript" nonce="3P79yt4cXbPxerlRQkUScw==">
+  window.addEventListener("DOMContentLoaded", () => {
+    const head = document.getElementsByTagName("head")[0];
+    const useProdHosts = ["www.kaggle.com", "admin.kaggle.com"];
+    const subdomain = useProdHosts.includes(window.location.hostname) ? "www" : "staging";
+
+    const lib = document.createElement("script");
+    lib.type = "text/javascript";
+    lib.src = `https://${subdomain}.kaggleusercontent.com/static/mathjax/2.7.9/MathJax.js?config=TeX-AMS-MML_HTMLorMML`;
+    head.appendChild(lib);
+  });
+</script>
+
+
+
+
+
+</div>
+
+
+
+
+  </main>
+</body>
+
+</html>

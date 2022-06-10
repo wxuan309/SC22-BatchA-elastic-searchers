@@ -1,0 +1,232 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Netflix Movies and TV Shows | Kaggle</title>
+  <meta charset="utf-8" />
+    <meta name="robots" content="index, follow" />
+  <meta name="description" content="Listings of movies and tv shows on Netflix - Regularly Updated" />
+  <meta name="turbolinks-cache-control" content="no-cache" />
+    <meta name="keywords" content="arts and entertainment,movies and tv shows,data visualization,exploratory data analysis,websites" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0">
+  <meta name="theme-color" content="#008ABC" />
+  <script nonce="ASFCoVZ/AqW27mf46i6BPQ==" type="text/javascript">
+    window["pageRequestStartTime"] = 1654797250819;
+    window["pageRequestEndTime"] = 1654797250889;
+    window["initialPageLoadStartTime"] = new Date().getTime();
+  </script>
+  <link rel="preconnect" href="https://www.google-analytics.com" crossorigin="anonymous" /><link rel="preconnect" href="https://stats.g.doubleclick.net" /><link rel="preconnect" href="https://storage.googleapis.com" /><link rel="preconnect" href="https://apis.google.com" />
+  <link href="/static/images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+  <link rel="manifest" href="/static/json/manifest.json" crossorigin="use-credentials">
+
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/icon?family=Google+Material+Icons"
+    rel="preload" as="style" />
+  <link href="https://fonts.googleapis.com/css?family=Inter:400,400i,500,500i,600,600i,700,700i"
+    rel="preload" as="style" />
+  <link href="https://fonts.googleapis.com/icon?family=Google+Material+Icons"
+    rel="stylesheet" media="print" id="async-google-font-1" />
+  <link href="https://fonts.googleapis.com/css?family=Inter:400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet" media="print" id="async-google-font-2" />
+  <script nonce="ASFCoVZ/AqW27mf46i6BPQ==" type="text/javascript">
+    const styleSheetIds = ["async-google-font-1", "async-google-font-2"];
+    styleSheetIds.forEach(function (id) {
+      document.getElementById(id).addEventListener("load", function() {
+        this.media = "all";
+      });
+    });
+  </script>
+
+    <link rel="canonical" href="/shivamb/netflix-shows" />
+    <link rel="stylesheet" type="text/css" href="/static/assets/vendor.css?v=75916b9cccfe514b1d11" />
+    <link rel="stylesheet" type="text/css" href="/static/assets/app.css?v=19bbec36655fd4261b5c" />
+  
+    
+ 
+      <script nonce="ASFCoVZ/AqW27mf46i6BPQ==">
+        try{(function(a,s,y,n,c,h,i,d,e){d=s.createElement("style");
+        d.appendChild(s.createTextNode(""));s.head.appendChild(d);d=d.sheet;
+        y=y.map(x => d.insertRule(x + "{ opacity: 0 !important }"));
+        h.start=1*new Date;h.end=i=function(){y.forEach(x => x<d.cssRules.length ? d.deleteRule(x) : {})};
+        (a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
+        })(window,document,['.site-header-react__nav'],'dataLayer',2000,{'GTM-52LNT9S':true});}catch(ex){}
+    </script>
+    <script nonce="ASFCoVZ/AqW27mf46i6BPQ==">
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-12629138-1', {
+            'optimize_id': 'GTM-52LNT9S',
+            'displayFeaturesTask': null,
+            'send_page_view': false,
+            'content_group1': 'Datasets'
+        });
+    </script>
+    <script nonce="ASFCoVZ/AqW27mf46i6BPQ==" async src="https://www.googletagmanager.com/gtag/js?id=UA-12629138-1"></script>
+
+  
+    
+    <meta property="og:url" content="/shivamb/netflix-shows" />
+    <meta property="og:title" content="Netflix Movies and TV Shows" />
+    <meta property="og:description" content="Listings of movies and tv shows on Netflix - Regularly Updated" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://storage.googleapis.com/kaggle-datasets-images/434238/824878/30c0ef57882454a0419a348088aa2306/dataset-card.jpg?t=2019-12-04-06-00-44" />
+    <meta property="fb:app_id" content="2665027677054710" />
+
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@kaggledatasets" />
+        <meta name="twitter:creator" content="@shivamshaz" />
+
+
+  <meta name="twitter:site" content="@Kaggle" /> 
+  
+    
+    <script nonce="ASFCoVZ/AqW27mf46i6BPQ==" type="application/ld+json">{"@context":"http://schema.org/","@type":"Dataset","name":"Netflix Movies and TV Shows","description":"### Other Platform's Datasets (Click on the logos to view) \n\n&gt; \n[![alt text][1]][2] [![alt text][3]][4] [![alt text][5]][6] [![alt text][7]][8]\n[1]: https://i.imgur.com/As0PMcL.jpg =75x20\n[2]: https://www.kaggle.com/shivamb/netflix-shows\n[3]: https://i.imgur.com/r5t3MpQ.jpg =75x20\n[4]: https://www.kaggle.com/shivamb/amazon-prime-movies-and-tv-shows\n[5]: https://i.imgur.com/4a4ZMuy.png =75x30\n[6]: https://www.kaggle.com/shivamb/disney-movies-and-tv-shows\n[7]: https://i.imgur.com/nCL8Skc.png?1 =75x32\n[8]: https://www.kaggle.com/shivamb/hulu-movies-and-tv-shows\n\n- [Amazon Prime Video Movies and TV Shows](https://www.kaggle.com/shivamb/amazon-prime-movies-and-tv-shows)\n- [Disney+ Movies and TV Shows](https://www.kaggle.com/shivamb/disney-movies-and-tv-shows)\n- [Netflix Prime Video Movies and TV Shows](https://www.kaggle.com/shivamb/netflix-shows)\n- [Hulu Movies and TV Shows](https://www.kaggle.com/shivamb/hulu-movies-and-tv-shows)\n\n### Netflix Movies and TV Shows \n\n&gt; **About this Dataset:** *[Netflix](https://en.wikipedia.org/wiki/Netflix) is one of the most popular media and video streaming platforms. They have over 8000 movies or tv shows available on their platform, as of mid-2021, they have over 200M Subscribers globally. This tabular dataset consists of listings of all the movies and tv shows available on Netflix, along with details such as - cast, directors, ratings, release year, duration, etc.* \n\nFeatured Notebooks: [Click Here to View Featured Notebooks](https://www.kaggle.com/shivamb/netflix-shows/discussion/279376)\nMilestone: Oct 18th, 2021: [Most Upvoted Dataset on Kaggle by an Individual Contributor](https://www.kaggle.com/shivamb/netflix-shows/discussion/279377)\n\n### Interesting Task Ideas \n\n&gt; 1. Understanding what content is available in different countries\n&gt; 2. Identifying similar content by matching text-based features \n&gt; 3. Network analysis of Actors / Directors and find interesting insights  \n&gt; 4. Does Netflix has more focus on TV Shows than movies in recent years.\n\n[Check my Other Datasets](https://www.kaggle.com/shivamb/datasets)\n","url":"https://www.kaggle.com/shivamb/netflix-shows","version":5,"keywords":["subject, arts and entertainment","subject, arts and entertainment, movies and tv shows","technique, data visualization","technique, exploratory data analysis","subject, science and technology, internet, websites"],"license":{"@type":"CreativeWork","name":"CC0: Public Domain","url":"https://creativecommons.org/publicdomain/zero/1.0/"},"identifier":["434238"],"includedInDataCatalog":{"@type":"DataCatalog","name":"Kaggle","url":"https://www.kaggle.com"},"creator":{"@type":"Person","name":"Shivam Bansal","url":"https://www.kaggle.com/shivamb","image":"https://storage.googleapis.com/kaggle-avatars/thumbnails/1571785-kg.jpeg"},"distribution":[{"@type":"DataDownload","requiresSubscription":true,"encodingFormat":"zip","fileFormat":"zip","contentUrl":"https://www.kaggle.com/datasets/shivamb/netflix-shows/download","contentSize":"1400865 bytes"}],"commentCount":57,"dateModified":"2021-09-27T04:44:36.77Z","discussionUrl":"https://www.kaggle.com/shivamb/netflix-shows/discussion","alternateName":"Listings of movies and tv shows on Netflix - Regularly Updated","isAccessibleForFree":true,"thumbnailUrl":"https://storage.googleapis.com/kaggle-datasets-images/434238/824878/30c0ef57882454a0419a348088aa2306/dataset-card.jpg?t=2019-12-04-06-00-44","interactionStatistic":[{"@type":"InteractionCounter","interactionType":"http://schema.org/CommentAction","userInteractionCount":57},{"@type":"InteractionCounter","interactionType":"http://schema.org/DownloadAction","userInteractionCount":242788},{"@type":"InteractionCounter","interactionType":"http://schema.org/ViewAction","userInteractionCount":1718255},{"@type":"InteractionCounter","interactionType":"http://schema.org/LikeAction","userInteractionCount":6599}]}</script>
+
+
+  
+    
+
+  
+    
+    
+<script nonce="ASFCoVZ/AqW27mf46i6BPQ==" type="text/javascript">
+    var Kaggle = window.Kaggle || {};
+
+    Kaggle.Current = {
+        antiForgeryToken: 'CfDJ8GeXgbEwE85OtAFpY1z4yyWaSqbKUJoCIrvR9PBiToYR0V9gVdubHPq8pWqensjrG5OCdpja3dObBqIqHVW6qBUgSQFjeyAfdOM-TlduOrL9ZA',
+        isAnonymous: true,
+        analyticsToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTQ3OTgxNTAsIlVzZXJJZCI6MH0.cBlB51rN-JeEEcwzfj7f3PDfBQzWSCsidjHjjYOBh2A',
+        analyticsTokenExpiry: 15,
+        
+        
+        
+        
+        
+        
+        
+        enableRapidash: true, 
+        
+    }
+        Kaggle.Current.log = function(){};
+        Kaggle.Current.warn = function(){};
+
+    const decodeUserProperty = function (escapedUserProperty) {
+        escapedUserProperty = escapedUserProperty || "";
+        try {
+            const textVersion = new DOMParser().parseFromString(escapedUserProperty, "text/html").documentElement.textContent;
+            if (textVersion) {
+                return textVersion;
+            }
+        } catch(ex) {}
+        return escapedUserProperty;
+    }
+    Kaggle.Current.userDisplayName = decodeUserProperty(Kaggle.Current.userDisplayNameEscaped);
+    Kaggle.Current.userEmail = decodeUserProperty(Kaggle.Current.userEmailEscaped); 
+</script>
+
+    
+
+<script nonce="ASFCoVZ/AqW27mf46i6BPQ==" type="text/javascript">
+    var Kaggle = window.Kaggle || {};
+    Kaggle.PageMessages = [];
+</script>
+
+
+
+    <script nonce="ASFCoVZ/AqW27mf46i6BPQ==">window['useKaggleAnalytics'] = true;</script>
+
+  <script id="gapi-target" nonce="ASFCoVZ/AqW27mf46i6BPQ==" src="https://apis.google.com/js/api.js" defer
+    async></script>
+  <script nonce="ASFCoVZ/AqW27mf46i6BPQ==" src="/static/assets/runtime.js?v=cd60de1e3cce2042c644" data-turbolinks-track="reload"></script>
+  <script nonce="ASFCoVZ/AqW27mf46i6BPQ==" src="/static/assets/vendor.js?v=1393b8827853c8b4481e" data-turbolinks-track="reload"></script>
+  <script nonce="ASFCoVZ/AqW27mf46i6BPQ==" src="/static/assets/app.js?v=00277347290fd4719266" data-turbolinks-track="reload"></script>
+    <script nonce="ASFCoVZ/AqW27mf46i6BPQ==" type="text/javascript">
+      window.kaggleStackdriverConfig = {
+        key: 'AIzaSyA4eNqUdRRskJsCZWVz-qL655Xa5JEMreE',
+        projectId: 'kaggle-161607',
+        service: 'web-fe',
+        version: 'ci',
+        userId: '0'
+      }
+    </script>
+</head>
+
+<body data-turbolinks="false">
+  <main>
+    
+
+
+
+
+
+
+<div id="site-container"></div>
+<div data-component-name="NavigationContainer" style="display: flex; flex-direction: column; flex: 1 0 auto;"></div><script class="kaggle-component" nonce="ASFCoVZ/AqW27mf46i6BPQ==">var Kaggle=window.Kaggle||{};Kaggle.State=Kaggle.State||[];Kaggle.State.push({"navigationType":"BOTH_NAV"});performance && performance.mark && performance.mark("NavigationContainer.componentCouldBootstrap");</script>
+<div id="site-body" class="hide">
+    
+
+<div data-component-name="DatasetMaterialContainer" style="display: flex; flex-direction: column; flex: 1 0 auto;"></div><script class="kaggle-component" nonce="ASFCoVZ/AqW27mf46i6BPQ==">var Kaggle=window.Kaggle||{};Kaggle.State=Kaggle.State||[];Kaggle.State.push({"basics":{"datasetId":434238,"slug":"netflix-shows","title":"Netflix Movies and TV Shows","description":"### Other Platform\u0027s Datasets (Click on the logos to view) \n\n\u0026gt; \n[![alt text][1]][2] [![alt text][3]][4] [![alt text][5]][6] [![alt text][7]][8]\n[1]: https://i.imgur.com/As0PMcL.jpg =75x20\n[2]: https://www.kaggle.com/shivamb/netflix-shows\n[3]: https://i.imgur.com/r5t3MpQ.jpg =75x20\n[4]: https://www.kaggle.com/shivamb/amazon-prime-movies-and-tv-shows\n[5]: https://i.imgur.com/4a4ZMuy.png =75x30\n[6]: https://www.kaggle.com/shivamb/disney-movies-and-tv-shows\n[7]: https://i.imgur.com/nCL8Skc.png?1 =75x32\n[8]: https://www.kaggle.com/shivamb/hulu-movies-and-tv-shows\n\n- [Amazon Prime Video Movies and TV Shows](https://www.kaggle.com/shivamb/amazon-prime-movies-and-tv-shows)\n- [Disney\u002B Movies and TV Shows](https://www.kaggle.com/shivamb/disney-movies-and-tv-shows)\n- [Netflix Prime Video Movies and TV Shows](https://www.kaggle.com/shivamb/netflix-shows)\n- [Hulu Movies and TV Shows](https://www.kaggle.com/shivamb/hulu-movies-and-tv-shows)\n\n### Netflix Movies and TV Shows \n\n\u0026gt; **About this Dataset:** *[Netflix](https://en.wikipedia.org/wiki/Netflix) is one of the most popular media and video streaming platforms. They have over 8000 movies or tv shows available on their platform, as of mid-2021, they have over 200M Subscribers globally. This tabular dataset consists of listings of all the movies and tv shows available on Netflix, along with details such as - cast, directors, ratings, release year, duration, etc.* \n\nFeatured Notebooks: [Click Here to View Featured Notebooks](https://www.kaggle.com/shivamb/netflix-shows/discussion/279376)\nMilestone: Oct 18th, 2021: [Most Upvoted Dataset on Kaggle by an Individual Contributor](https://www.kaggle.com/shivamb/netflix-shows/discussion/279377)\n\n### Interesting Task Ideas \n\n\u0026gt; 1. Understanding what content is available in different countries\n\u0026gt; 2. Identifying similar content by matching text-based features \n\u0026gt; 3. Network analysis of Actors / Directors and find interesting insights  \n\u0026gt; 4. Does Netflix has more focus on TV Shows than movies in recent years.\n\n[Check my Other Datasets](https://www.kaggle.com/shivamb/datasets)\n","viewCount":1718255,"downloadCount":242788,"scriptCount":990,"topicCount":57,"owner":{"id":1571785,"imageUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/1571785-kg.jpeg","name":"Shivam Bansal","profileUrl":"/shivamb","slug":"shivamb","userTier":"GRANDMASTER"},"license":{"id":1,"name":"CC0: Public Domain","url":"https://creativecommons.org/publicdomain/zero/1.0/"},"overview":"Listings of movies and tv shows on Netflix - Regularly Updated","collaboratorList":{"owner":{"userId":1571785,"profileUrl":"/shivamb","thumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/1571785-kg.jpeg","name":"Shivam Bansal","slug":"shivamb","userTier":"GRANDMASTER","type":"OWNER"}},"coverImageUrl":"https://storage.googleapis.com/kaggle-datasets-images/434238/824878/30c0ef57882454a0419a348088aa2306/dataset-cover.jpg?t=2019-12-04-06-00-44","data":{"totalSize":1400865,"isFileset":true,"canSeeDownload":true,"firestorePath":"ZHEn4qF1kW0ItPWURZQW/versions/aycdzpNHzftIEk0cMnFV","downloadUrl":"/datasets/shivamb/shivamb/download?datasetVersionNumber=5","versionId":2698094,"id":448435},"voteCount":6599,"medalUrl":"/static/images/medals/datasets/goldl@2x.png","downloadUrl":"/datasets/shivamb/netflix-shows/download","lastUpdateTime":"2021-09-27T04:44:36.770Z","datasetVersionNumber":5,"creatorDisplayName":"Shivam Bansal","cardImageUrl":"https://storage.googleapis.com/kaggle-datasets-images/434238/824878/30c0ef57882454a0419a348088aa2306/dataset-card.jpg?t=2019-12-04-06-00-44","categories":{"tags":[{"id":2200,"name":"arts and entertainment","fullPath":"subject \u003E arts and entertainment","listingUrl":"/datasets?group=public\u0026tagids=2200","description":"Activities that holds the attention and interest of an audience, or gives pleasure and delight. It can be an idea or a task, but is more likely to be one of the activities or events that have developed over thousands of years specifically for the purpose of keeping an audience\u0027s attention.","datasetCount":20254,"notebookCount":23182,"tagUrl":"/tags/arts-and-entertainment","displayName":"Arts and Entertainment"},{"id":2303,"name":"movies and tv shows","fullPath":"subject \u003E arts and entertainment \u003E movies and tv shows","listingUrl":"/datasets?group=public\u0026tagids=2303","description":"Grab a bucket of popcorn and come analyze these movie ratings. The world must know which blockbuster film is the blockbuster film of all time!","datasetCount":6039,"competitionCount":3,"notebookCount":1866,"tagUrl":"/tags/film","displayName":"Movies and TV Shows"},{"id":13208,"name":"data visualization","fullPath":"technique \u003E data visualization","listingUrl":"/datasets?group=public\u0026tagids=13208","description":"The art of depicting data in a visual format. Using charts and graphs, it is easier to observe patterns, relationships, and outliers.","datasetCount":1919,"notebookCount":25870,"tagUrl":"/tags/data-visualization","displayName":"Data Visualization"},{"id":13201,"name":"exploratory data analysis","fullPath":"technique \u003E exploratory data analysis","listingUrl":"/datasets?group=public\u0026tagids=13201","description":"","datasetCount":1592,"notebookCount":22979,"tagUrl":"/tags/eda","displayName":"Exploratory Data Analysis"},{"id":1115,"name":"websites","fullPath":"subject \u003E science and technology \u003E internet \u003E websites","listingUrl":"/datasets?group=public\u0026tagids=1115","description":"Websites, like this one, are collections of content that can be found under a specific address. These datasets include information on individual websites or collections of websites.","datasetCount":208,"notebookCount":182,"tagUrl":"/tags/web-sites","displayName":"Websites"}]},"datasetExternalUrl":"https://www.kaggle.com/datasets/shivamb/netflix-shows","ownerTwitter":"shivamshaz","forumId":446914,"datasetVersionId":2654038,"canCreateTasks":true,"moderationStatus":"PRIVATED_MODERATION_STATUS_NO_ABUSE","lastVersionNumber":5,"diffType":"VERSIONED"},"@wf": "Datasets.DatasetMaterialDtoWireFormat3"});performance && performance.mark && performance.mark("DatasetMaterialContainer.componentCouldBootstrap");</script>
+<script nonce="ASFCoVZ/AqW27mf46i6BPQ==" type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+    "HTML-CSS": {
+    preferredFont: "TeX",
+    availableFonts: ["STIX", "TeX"],
+    linebreaks: {
+    automatic: true
+    },
+    EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50)
+    },
+    tex2jax: {
+    inlineMath: [["\\(", "\\)"], ["\\\\(", "\\\\)"]],
+    displayMath: [["$$", "$$"], ["\\[", "\\]"]],
+    processEscapes: true,
+    ignoreClass: "tex2jax_ignore|dno"
+    },
+    TeX: {
+    noUndefined: {
+    attributes: {
+    mathcolor: "red",
+    mathbackground: "#FFEEEE",
+    mathsize: "90%"
+    }
+    }
+    },
+    Macros: {
+    href: "{}"
+    },
+    skipStartupTypeset: true,
+    messageStyle: "none",
+    extensions: [],
+    });
+</script>
+<script type="text/javascript" nonce="ASFCoVZ/AqW27mf46i6BPQ==">
+  window.addEventListener("DOMContentLoaded", () => {
+    const head = document.getElementsByTagName("head")[0];
+    const useProdHosts = ["www.kaggle.com", "admin.kaggle.com"];
+    const subdomain = useProdHosts.includes(window.location.hostname) ? "www" : "staging";
+
+    const lib = document.createElement("script");
+    lib.type = "text/javascript";
+    lib.src = `https://${subdomain}.kaggleusercontent.com/static/mathjax/2.7.9/MathJax.js?config=TeX-AMS-MML_HTMLorMML`;
+    head.appendChild(lib);
+  });
+</script>
+
+
+
+
+
+</div>
+
+
+
+
+  </main>
+</body>
+
+</html>
