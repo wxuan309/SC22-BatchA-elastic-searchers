@@ -124,12 +124,12 @@
 {"cell_type":"markdown","id":"d35e67","input":"This can get quite annoying with longer variable names, so we can do the following","pos":12,"type":"cell"}
 {"cell_type":"markdown","id":"d43956","input":"Below, create a list of your favorite colors. Then figure out how to add a new element to the end of the list. Finally change a value in the list to something new.","pos":39,"type":"cell"}
 {"cell_type":"markdown","id":"d7384b","input":"First, we'll have to import it. It is common practice to import pandas as pd but you are free to import it as you see fit.","pos":99,"type":"cell"}
-{"cell_type":"markdown","id":"dc2622","input":"Numpy is a library which is coded outside of python, making it faster. It gives us access to better and more efficient lists\n\nWith it, we can make a list like this:","pos":89,"type":"cell"}
+{"cell_type":"markdown","id":"dc2622","input":"Numpy is a library which is coded outside of python, making it faster. It gives us access to better and more efficient lists\n\nWith it, we can make a list like this:\n\n","pos":89,"type":"cell"}
 {"cell_type":"markdown","id":"dc7e36","input":"random allows us to get random numbers","pos":124,"type":"cell"}
 {"cell_type":"markdown","id":"dcdedc","input":"Now its your turn. Either break up into 3 teams and have each team solve one of the blocks or solve them all together.","pos":59,"type":"cell"}
 {"cell_type":"markdown","id":"ef88c6","input":"The goal of this notebook is to provide students with knowledge of the fundamentals of python. We will take a more interactive approach than most class room settings and ask the students to do some research on their own then bring their learnings back here to share with the class. \n\n","pos":1,"type":"cell"}
 {"cell_type":"markdown","id":"ef959a","input":"We can also perform basic algebra to these variables and save the output to a new variable","pos":5,"type":"cell"}
 {"cell_type":"markdown","id":"f2efc0","input":"In the block below, create a function that takes in a list and prints out each element 1 at a time. For example, if the input was ['Dog', 'Cat', 'Hamster'], the output should be\n\nDog\n\nCat\n\nHamster","pos":82,"type":"cell"}
 {"cell_type":"markdown","id":"ff7067","input":"Create a few boolean variables here, then try to add them together, subtract them, multiply them and divide them to see what happens. You may get an error, and thats okay. Its important to know what can and can't be done with a type of data.","pos":19,"type":"cell"}
-{"id":0,"time":1654882799915,"type":"user"}
-{"last_load":1654888401523,"type":"file"}
+{"id":0,"time":1655145847793,"type":"user"}
+{"last_load":1655154830348,"type":"file"}
