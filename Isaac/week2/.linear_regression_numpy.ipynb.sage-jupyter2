@@ -27,5 +27,5 @@
 {"cell_type":"markdown","id":"9fa9af","input":"## split data into train and validation sets (80/20)","metadata":{"id":"irEOBQoca-sL"},"pos":5,"type":"cell"}
 {"cell_type":"markdown","id":"d722de","input":"### For each epoch, there are 5 training steps:\n* Compute model’s predictions \n* Compute the error (the difference between the actual value and predicted value) \n* Compute the loss ( mean square error = the average of (error)^2)\n* Compute the gradients for every parameter (require calculus)\n* Update the parameters a and b","metadata":{"id":"Tmk5nl_Va-sQ"},"pos":12,"type":"cell"}
 {"end":1655226966341,"exec_count":9,"id":"cd1b4f","input":"plt.figure(figsize=(10,5))\ny_pred = a + b * x_train\nplt.plot(x_train, y_pred, '--')\n\nplt.scatter(x_train,y_train, c='orange')  \nplt.xlabel('x', fontsize = 20) \nplt.ylabel('y', fontsize = 20)\nplt.title('Generated Data - Train')\nplt.grid('on')\nplt.show()","kernel":"python3-ubuntu","no_halt":true,"output":{"0":{"data":{"image/png":"18628dc2a6ebf52796e283a5e3c85ef6517dffdd","text/plain":"<Figure size 720x360 with 1 Axes>"},"metadata":{"image/png":{"height":342,"width":619},"needs_background":"light"}}},"pos":13.5,"start":1655226965994,"state":"done","type":"cell"}
-{"id":0,"time":1655226960616,"type":"user"}
+{"id":0,"time":1655228363410,"type":"user"}
 {"last_load":1655226711401,"type":"file"}
