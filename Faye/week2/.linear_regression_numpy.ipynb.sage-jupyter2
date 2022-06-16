@@ -26,5 +26,5 @@
 {"cell_type":"markdown","id":"a58007","input":"### For each epoch, there are 5 training steps:\n* Compute model’s predictions \n* Compute the error (the difference between the actual value and predicted value) \n* Compute the loss ( mean square error = the average of (error)^2)\n* Compute the gradients for every parameter (require calculus)\n* Update the parameters a and b","metadata":{"id":"Tmk5nl_Va-sQ"},"pos":11,"type":"cell"}
 {"cell_type":"markdown","id":"cc888e","input":"## linear regression using numpy ","metadata":{"id":"gi4pQP8Ia-sO"},"pos":8,"type":"cell"}
 {"cell_type":"markdown","id":"cd711e","input":"## Data Generation","metadata":{"id":"JlrQHpg8a-sI"},"pos":2,"type":"cell"}
-{"id":0,"time":1655317808799,"type":"user"}
-{"last_load":1655317808951,"type":"file"}
+{"id":0,"time":1655403130983,"type":"user"}
+{"last_load":1655409703819,"type":"file"}
