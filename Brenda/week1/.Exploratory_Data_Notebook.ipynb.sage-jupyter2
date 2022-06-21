@@ -81,5 +81,5 @@
 {"cell_type":"markdown","id":"f7ca67","input":"##### This section will start almost empty, you will add to it as you import new packages and define function.\n- I always recommend starting with 'import pandas as pd' for dataframe management\n* Here is the pandas docs - https://pandas.pydata.org/docs/reference/index.html#api\n- Otherwise you can ignore these for now","pos":4,"type":"cell"}
 {"cell_type":"markdown","id":"f7d43e","input":"First things first, now that we have completed our calculations we will turn the index into a named column for ease of graphing and we need to include state code if we want to graph on a map.\n","pos":67,"type":"cell"}
 {"cell_type":"raw","id":"7cf050","input":"","pos":74,"type":"cell"}
-{"id":0,"time":1655400493014,"type":"user"}
-{"last_load":1655400492566,"type":"file"}
+{"id":0,"time":1655834396194,"type":"user"}
+{"last_load":1655831558853,"type":"file"}
