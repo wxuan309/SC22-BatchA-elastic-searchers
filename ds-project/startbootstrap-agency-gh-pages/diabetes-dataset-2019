@@ -1,0 +1,231 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Diabetes Dataset 2019 | Kaggle</title>
+  <meta charset="utf-8" />
+    <meta name="robots" content="index, follow" />
+  <meta name="description" content="Prediction and classification using Machine Learning" />
+  <meta name="turbolinks-cache-control" content="no-cache" />
+    <meta name="keywords" content="earth and nature,diabetes,india,healthcare" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0">
+  <meta name="theme-color" content="#008ABC" />
+  <script nonce="4E/cW8YBj4x2hecVwsRlaQ==" type="text/javascript">
+    window["pageRequestStartTime"] = 1654893906554;
+    window["pageRequestEndTime"] = 1654893906692;
+    window["initialPageLoadStartTime"] = new Date().getTime();
+  </script>
+  <link rel="preconnect" href="https://www.google-analytics.com" crossorigin="anonymous" /><link rel="preconnect" href="https://stats.g.doubleclick.net" /><link rel="preconnect" href="https://storage.googleapis.com" /><link rel="preconnect" href="https://apis.google.com" />
+  <link href="/static/images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+  <link rel="manifest" href="/static/json/manifest.json" crossorigin="use-credentials">
+
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/icon?family=Google+Material+Icons"
+    rel="preload" as="style" />
+  <link href="https://fonts.googleapis.com/css?family=Inter:400,400i,500,500i,600,600i,700,700i"
+    rel="preload" as="style" />
+  <link href="https://fonts.googleapis.com/icon?family=Google+Material+Icons"
+    rel="stylesheet" media="print" id="async-google-font-1" />
+  <link href="https://fonts.googleapis.com/css?family=Inter:400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet" media="print" id="async-google-font-2" />
+  <script nonce="4E/cW8YBj4x2hecVwsRlaQ==" type="text/javascript">
+    const styleSheetIds = ["async-google-font-1", "async-google-font-2"];
+    styleSheetIds.forEach(function (id) {
+      document.getElementById(id).addEventListener("load", function() {
+        this.media = "all";
+      });
+    });
+  </script>
+
+    <link rel="canonical" href="/tigganeha4/diabetes-dataset-2019" />
+    <link rel="stylesheet" type="text/css" href="/static/assets/vendor.css?v=75916b9cccfe514b1d11" />
+    <link rel="stylesheet" type="text/css" href="/static/assets/app.css?v=19bbec36655fd4261b5c" />
+  
+    
+ 
+      <script nonce="4E/cW8YBj4x2hecVwsRlaQ==">
+        try{(function(a,s,y,n,c,h,i,d,e){d=s.createElement("style");
+        d.appendChild(s.createTextNode(""));s.head.appendChild(d);d=d.sheet;
+        y=y.map(x => d.insertRule(x + "{ opacity: 0 !important }"));
+        h.start=1*new Date;h.end=i=function(){y.forEach(x => x<d.cssRules.length ? d.deleteRule(x) : {})};
+        (a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
+        })(window,document,['.site-header-react__nav'],'dataLayer',2000,{'GTM-52LNT9S':true});}catch(ex){}
+    </script>
+    <script nonce="4E/cW8YBj4x2hecVwsRlaQ==">
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-12629138-1', {
+            'optimize_id': 'GTM-52LNT9S',
+            'displayFeaturesTask': null,
+            'send_page_view': false,
+            'content_group1': 'Datasets'
+        });
+    </script>
+    <script nonce="4E/cW8YBj4x2hecVwsRlaQ==" async src="https://www.googletagmanager.com/gtag/js?id=UA-12629138-1"></script>
+
+  
+    
+    <meta property="og:url" content="/tigganeha4/diabetes-dataset-2019" />
+    <meta property="og:title" content="Diabetes Dataset 2019" />
+    <meta property="og:description" content="Prediction and classification using Machine Learning" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://storage.googleapis.com/kaggle-datasets-images/930184/1573591/34bb2d54d500b0e6beb163d309fed3d3/dataset-card.jpg?t=2020-10-20-06-52-52" />
+    <meta property="fb:app_id" content="2665027677054710" />
+
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@kaggledatasets" />
+
+
+  <meta name="twitter:site" content="@Kaggle" /> 
+  
+    
+    <script nonce="4E/cW8YBj4x2hecVwsRlaQ==" type="application/ld+json">{"@context":"http://schema.org/","@type":"Dataset","name":"Diabetes Dataset 2019","description":"### Context\n\nThis dataset was collected by Neha Prerna Tigga and Dr. Shruti Garg of the Department of Computer Science and Engineering, BIT Mesra, Ranchi-835215 for research, non-commercial purposes only. An article is also published implementing this dataset. For more information and citation of this dataset please refer: \n\nTigga, N. P., &amp; Garg, S. (2020). Prediction of Type 2 Diabetes using Machine Learning Classification Methods. Procedia Computer Science, 167, 706-716. DOI: https://doi.org/10.1016/j.procs.2020.03.336\n\n\n### Content\n\nThere is a total of 952 instances with 17 independent predictor variables and one binary target or dependent variable, `Diabetes`. \n\n\n### Acknowledgements\n\nWe would like to thank all the participants who contributed towards the building of this dataset.\n\n\n### Inspiration\n\nTo build a machine learning algorithm to predict if a person has diabetes or not?","url":"https://www.kaggle.com/tigganeha4/diabetes-dataset-2019","version":1,"keywords":["subject, earth and nature","subject, health and fitness, health, health conditions, diabetes","geography and places, asia, india","subject, health and fitness, health, healthcare"],"license":{"@type":"CreativeWork","name":"Attribution 4.0 International (CC BY 4.0)","url":"https://creativecommons.org/licenses/by/4.0/"},"identifier":["930184"],"includedInDataCatalog":{"@type":"DataCatalog","name":"Kaggle","url":"https://www.kaggle.com"},"creator":{"@type":"Person","name":"Neha Prerna Tigga","url":"https://www.kaggle.com/tigganeha4","image":"https://storage.googleapis.com/kaggle-avatars/thumbnails/2777900-gp.jpg"},"distribution":[{"@type":"DataDownload","requiresSubscription":true,"encodingFormat":"zip","fileFormat":"zip","contentUrl":"https://www.kaggle.com/datasets/tigganeha4/diabetes-dataset-2019/download","contentSize":"5970 bytes"}],"commentCount":0,"dateModified":"2020-10-20T06:43:27.92Z","discussionUrl":"https://www.kaggle.com/tigganeha4/diabetes-dataset-2019/discussion","alternateName":"Prediction and classification using Machine Learning","isAccessibleForFree":true,"thumbnailUrl":"https://storage.googleapis.com/kaggle-datasets-images/930184/1573591/34bb2d54d500b0e6beb163d309fed3d3/dataset-card.jpg?t=2020-10-20-06-52-52","interactionStatistic":[{"@type":"InteractionCounter","interactionType":"http://schema.org/CommentAction","userInteractionCount":0},{"@type":"InteractionCounter","interactionType":"http://schema.org/DownloadAction","userInteractionCount":1493},{"@type":"InteractionCounter","interactionType":"http://schema.org/ViewAction","userInteractionCount":9782},{"@type":"InteractionCounter","interactionType":"http://schema.org/LikeAction","userInteractionCount":26}]}</script>
+
+
+  
+    
+
+  
+    
+    
+<script nonce="4E/cW8YBj4x2hecVwsRlaQ==" type="text/javascript">
+    var Kaggle = window.Kaggle || {};
+
+    Kaggle.Current = {
+        antiForgeryToken: 'CfDJ8Cs-Lz1EcsZJoJpPxm8uGgCo19nJbb_06riOxfBI654XMevO7k0_BjVzziJGq80lVpjmoch-wq72bh-byXyRkc50VHzb8YgXB6LGVjW5ViN7zQ',
+        isAnonymous: true,
+        analyticsToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTQ4OTQ4MDYsIlVzZXJJZCI6MH0.cFRqgtN8a9W25GahU16-sXti7jHeeSpSZtRdUk5bGI8',
+        analyticsTokenExpiry: 15,
+        
+        
+        
+        
+        
+        
+        
+        enableRapidash: true, 
+        
+    }
+        Kaggle.Current.log = function(){};
+        Kaggle.Current.warn = function(){};
+
+    const decodeUserProperty = function (escapedUserProperty) {
+        escapedUserProperty = escapedUserProperty || "";
+        try {
+            const textVersion = new DOMParser().parseFromString(escapedUserProperty, "text/html").documentElement.textContent;
+            if (textVersion) {
+                return textVersion;
+            }
+        } catch(ex) {}
+        return escapedUserProperty;
+    }
+    Kaggle.Current.userDisplayName = decodeUserProperty(Kaggle.Current.userDisplayNameEscaped);
+    Kaggle.Current.userEmail = decodeUserProperty(Kaggle.Current.userEmailEscaped); 
+</script>
+
+    
+
+<script nonce="4E/cW8YBj4x2hecVwsRlaQ==" type="text/javascript">
+    var Kaggle = window.Kaggle || {};
+    Kaggle.PageMessages = [];
+</script>
+
+
+
+    <script nonce="4E/cW8YBj4x2hecVwsRlaQ==">window['useKaggleAnalytics'] = true;</script>
+
+  <script id="gapi-target" nonce="4E/cW8YBj4x2hecVwsRlaQ==" src="https://apis.google.com/js/api.js" defer
+    async></script>
+  <script nonce="4E/cW8YBj4x2hecVwsRlaQ==" src="/static/assets/runtime.js?v=c3a51a7863e1896a78d4" data-turbolinks-track="reload"></script>
+  <script nonce="4E/cW8YBj4x2hecVwsRlaQ==" src="/static/assets/vendor.js?v=1393b8827853c8b4481e" data-turbolinks-track="reload"></script>
+  <script nonce="4E/cW8YBj4x2hecVwsRlaQ==" src="/static/assets/app.js?v=10c31ec7ff331367c15d" data-turbolinks-track="reload"></script>
+    <script nonce="4E/cW8YBj4x2hecVwsRlaQ==" type="text/javascript">
+      window.kaggleStackdriverConfig = {
+        key: 'AIzaSyA4eNqUdRRskJsCZWVz-qL655Xa5JEMreE',
+        projectId: 'kaggle-161607',
+        service: 'web-fe',
+        version: 'ci',
+        userId: '0'
+      }
+    </script>
+</head>
+
+<body data-turbolinks="false">
+  <main>
+    
+
+
+
+
+
+
+<div id="site-container"></div>
+<div data-component-name="NavigationContainer" style="display: flex; flex-direction: column; flex: 1 0 auto;"></div><script class="kaggle-component" nonce="4E/cW8YBj4x2hecVwsRlaQ==">var Kaggle=window.Kaggle||{};Kaggle.State=Kaggle.State||[];Kaggle.State.push({"navigationType":"BOTH_NAV"});performance && performance.mark && performance.mark("NavigationContainer.componentCouldBootstrap");</script>
+<div id="site-body" class="hide">
+    
+
+<div data-component-name="DatasetMaterialContainer" style="display: flex; flex-direction: column; flex: 1 0 auto;"></div><script class="kaggle-component" nonce="4E/cW8YBj4x2hecVwsRlaQ==">var Kaggle=window.Kaggle||{};Kaggle.State=Kaggle.State||[];Kaggle.State.push({"basics":{"datasetId":930184,"slug":"diabetes-dataset-2019","title":"Diabetes Dataset 2019","description":"### Context\n\nThis dataset was collected by Neha Prerna Tigga and Dr. Shruti Garg of the Department of Computer Science and Engineering, BIT Mesra, Ranchi-835215 for research, non-commercial purposes only. An article is also published implementing this dataset. For more information and citation of this dataset please refer: \n\nTigga, N. P., \u0026 Garg, S. (2020). Prediction of Type 2 Diabetes using Machine Learning Classification Methods. Procedia Computer Science, 167, 706-716. DOI: https://doi.org/10.1016/j.procs.2020.03.336\n\n\n### Content\n\nThere is a total of 952 instances with 17 independent predictor variables and one binary target or dependent variable, \u0060Diabetes\u0060. \n\n\n### Acknowledgements\n\nWe would like to thank all the participants who contributed towards the building of this dataset.\n\n\n### Inspiration\n\nTo build a machine learning algorithm to predict if a person has diabetes or not?","viewCount":9782,"downloadCount":1493,"scriptCount":5,"owner":{"id":2777900,"imageUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/2777900-gp.jpg","name":"Neha Prerna Tigga","profileUrl":"/tigganeha4","slug":"tigganeha4"},"license":{"id":13,"name":"Attribution 4.0 International (CC BY 4.0)","url":"https://creativecommons.org/licenses/by/4.0/"},"overview":"Prediction and classification using Machine Learning","collaboratorList":{"owner":{"userId":2777900,"profileUrl":"/tigganeha4","thumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/2777900-gp.jpg","name":"Neha Prerna Tigga","slug":"tigganeha4","type":"OWNER"}},"coverImageUrl":"https://storage.googleapis.com/kaggle-datasets-images/930184/1573591/34bb2d54d500b0e6beb163d309fed3d3/dataset-cover.jpg?t=2020-10-20-06-52-52","data":{"totalSize":5970,"isFileset":true,"canSeeDownload":true,"firestorePath":"tMpOL7uJRGBzxc4paFWu/versions/vfosw564YgYdYp97kVGa","downloadUrl":"/datasets/tigganeha4/tigganeha4/download?datasetVersionNumber=1","versionId":1608720,"id":951745},"voteCount":26,"medalUrl":"/static/images/medals/datasets/bronzel@2x.png","downloadUrl":"/datasets/tigganeha4/diabetes-dataset-2019/download","lastUpdateTime":"2020-10-20T06:43:27.920Z","datasetVersionNumber":1,"creatorDisplayName":"Neha Prerna Tigga","cardImageUrl":"https://storage.googleapis.com/kaggle-datasets-images/930184/1573591/34bb2d54d500b0e6beb163d309fed3d3/dataset-card.jpg?t=2020-10-20-06-52-52","categories":{"tags":[{"id":7000,"name":"earth and nature","fullPath":"subject \u003E earth and nature","listingUrl":"/datasets?group=public\u0026tagids=7000","description":"","datasetCount":18678,"competitionCount":2,"notebookCount":208,"tagUrl":"/tags/natural-and-physical-sciences","displayName":"Earth and Nature"},{"id":16383,"name":"diabetes","fullPath":"subject \u003E health and fitness \u003E health \u003E health conditions \u003E diabetes","listingUrl":"/datasets?group=public\u0026tagids=16383","description":"","datasetCount":1526,"notebookCount":562,"tagUrl":"/tags/diabetes","displayName":"Diabetes"},{"id":3023,"name":"india","fullPath":"geography and places \u003E asia \u003E india","listingUrl":"/datasets?group=public\u0026tagids=3023","description":"This tag will take you to the wonderful land of datasets and kernels related to India. You will find topics that range far and wide. There\u0027s education, travel, weather, and crime, too.","datasetCount":951,"notebookCount":589,"tagUrl":"/tags/india","displayName":"India"},{"id":4202,"name":"healthcare","fullPath":"subject \u003E health and fitness \u003E health \u003E healthcare","listingUrl":"/datasets?group=public\u0026tagids=4202","description":"AI in healthcare is a growing interest. One of the major problems is simply converting research into an application. Should be easy, right?","datasetCount":902,"competitionCount":9,"notebookCount":1192,"tagUrl":"/tags/healthcare","displayName":"Healthcare","fontAwesomeIcon":"medkit"}]},"datasetExternalUrl":"https://www.kaggle.com/datasets/tigganeha4/diabetes-dataset-2019","forumId":946144,"datasetVersionId":1573591,"canCreateTasks":true,"moderationStatus":"PRIVATED_MODERATION_STATUS_NO_ABUSE","lastVersionNumber":1,"diffType":"VERSIONED"},"@wf": "Datasets.DatasetMaterialDtoWireFormat3"});performance && performance.mark && performance.mark("DatasetMaterialContainer.componentCouldBootstrap");</script>
+<script nonce="4E/cW8YBj4x2hecVwsRlaQ==" type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+    "HTML-CSS": {
+    preferredFont: "TeX",
+    availableFonts: ["STIX", "TeX"],
+    linebreaks: {
+    automatic: true
+    },
+    EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50)
+    },
+    tex2jax: {
+    inlineMath: [["\\(", "\\)"], ["\\\\(", "\\\\)"]],
+    displayMath: [["$$", "$$"], ["\\[", "\\]"]],
+    processEscapes: true,
+    ignoreClass: "tex2jax_ignore|dno"
+    },
+    TeX: {
+    noUndefined: {
+    attributes: {
+    mathcolor: "red",
+    mathbackground: "#FFEEEE",
+    mathsize: "90%"
+    }
+    }
+    },
+    Macros: {
+    href: "{}"
+    },
+    skipStartupTypeset: true,
+    messageStyle: "none",
+    extensions: [],
+    });
+</script>
+<script type="text/javascript" nonce="4E/cW8YBj4x2hecVwsRlaQ==">
+  window.addEventListener("DOMContentLoaded", () => {
+    const head = document.getElementsByTagName("head")[0];
+    const useProdHosts = ["www.kaggle.com", "admin.kaggle.com"];
+    const subdomain = useProdHosts.includes(window.location.hostname) ? "www" : "staging";
+
+    const lib = document.createElement("script");
+    lib.type = "text/javascript";
+    lib.src = `https://${subdomain}.kaggleusercontent.com/static/mathjax/2.7.9/MathJax.js?config=TeX-AMS-MML_HTMLorMML`;
+    head.appendChild(lib);
+  });
+</script>
+
+
+
+
+
+</div>
+
+
+
+
+  </main>
+</body>
+
+</html>
