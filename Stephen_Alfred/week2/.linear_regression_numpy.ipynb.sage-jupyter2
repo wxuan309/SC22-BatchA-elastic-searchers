@@ -27,5 +27,5 @@
 {"cell_type":"markdown","id":"bde102","input":"# Linear regression using NumPy\n\n","metadata":{"id":"K_X2fB9ta-rv"},"pos":0,"type":"cell"}
 {"cell_type":"markdown","id":"f44367","input":"## plot the train and validation sets","metadata":{"id":"DCCwyhkya-sM"},"pos":7,"type":"cell"}
 {"cell_type":"markdown","id":"fd3879","input":"## Data Generation","metadata":{"id":"JlrQHpg8a-sI"},"pos":2,"type":"cell"}
-{"id":0,"time":1655230129621,"type":"user"}
-{"last_load":1655238887232,"type":"file"}
+{"id":0,"time":1656005899696,"type":"user"}
+{"last_load":1656005713166,"type":"file"}
