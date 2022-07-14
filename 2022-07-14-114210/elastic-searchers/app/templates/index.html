@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+<meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Diabetic Prediction</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="https://aux3.iconspalace.com/uploads/543120981.png" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="static/css/styles.css" rel="stylesheet" />
+
+        <!-- To automatically render math in text elements, include the auto-render extension: -->
+        <script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0-rc.1/dist/contrib/auto-render.min.js" integrity="sha384-yACMu8JWxKzSp/C1YV86pzGiQ/l1YUfE8oPuahJQxzehAjEt2GiQuy/BIvl9KyeF" crossorigin="anonymous"
+          onload="renderMathInElement(document.body);">
+        </script>
+    
+
+
+        <!-- The loading of KaTeX is deferred to speed up page rendering -->
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.10.0-rc.1/dist/katex.min.js" integrity="sha384-483A6DwYfKeDa0Q52fJmxFXkcPCFfnXMoXblOkJ4JcA8zATN6Tm78UNL72AKk+0O" crossorigin="anonymous"></script>
+
+
+        <!-- Math -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0-rc.1/dist/katex.min.css" integrity="sha384-D+9gmBxUQogRLqvARvNLmA9hS2x//eK1FhVb9PiU86gmcrBrJAQT8okdJ4LMp2uv" crossorigin="anonymous">
+  </head>
+  <body id="page-top">
+    <!-- Navigation-->
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand" href="#page-top"><img alt="..." src= "https://static.wixstatic.com/media/12b467_a4ceef0f338c41c7885cb083ea36a00f~mv2_d_1742_1743_s_2.png/v1/fill/w_102,h_102,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/ai%20camp%20logo.png"></a> <button aria-controls=
+        "navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"
+        class="navbar-toggler" data-bs-target="#navbarResponsive"
+        data-bs-toggle="collapse" type="button">Menu <i class=
+        "fas fa-bars ms-1"></i></button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#HOME">HOME</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#RESOURCES">RESOURCES</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#PROCESS">PROCESS</a>
+            <li class="nav-item">
+              <a class="nav-link" href="#VISUALIZATIONS">Visualizations</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#MODELS">MODELS</a>
+            </li>
+           <li class="nav-item">
+              <a class="nav-link" href="#EVALUATION">EVALUATE</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#TEAM">TEAM</a>
+            </li>
+
+ 
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Masthead-->
+
+    <header class="masthead">
+      <div class="container">
+        <div class="masthead-heading text-uppercase">
+          Diabetes Self-Evaluation
+        </div>
+        <a class="btn btn-primary btn-xl text-uppercase" href=
+        "#EVALUATION">evaluate</a>
+      </div>
+    </header>
+    <!-- RESOURCES-->
+
+    <section class="page-section" id="RESOURCES">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="section-heading text-uppercase">
+            Resources
+          </h2>
+
+          <h3 class="section-subheading text-muted">
+            Provided below is all the information and guide lines that you need
+            to navigate through our website.
+          </h3>
+        </div>
+
+        <div class="row text-center">
+          <div class="col-md-4">
+            <h4 class="my-3">
+              The Why
+            </h4>
+
+            <p class="text-muted">
+              According to the CDC, diabetes is a chronic disorder that impacts
+              how a person’s body converts food into energy. Diabetes slows
+              down or stops the production of insulin, increasing the amount of
+              glucose, or blood sugar. This increase leads to heart disease,
+              vision loss, and other serious health-problems. Our objective is
+              to spread awareness on the topic of diabetes. It is something
+              that a person can carry through their life without knowing. The
+              purpose of our website is to aid people in self-evaluation to see
+              whether they may or may not be more prone to having diabetes.
+            </p>
+          </div>
+
+          <div class="col-md-4">
+            <h4 class="my-3">
+              Exploration Of Our Data
+            </h4>
+
+            <p class="text-muted">
+              Our data is derived from a <a href=
+              "https://www.kaggle.com/datasets/tigganeha4/diabetes-dataset-2019">
+              2019 Diabetes data set</a> from Kaggle. The evaluated factors
+              include: Age, Gender, Family Diabetes, High Blood Pressure,
+              Prediabetes, Physically Active, BMI, Smoking, Alcohol, Sleep, Sound
+              Sleep, Regular Medicine, Junk Food, Stress, BP level,
+              Pregnancies,and Urination.
+            </p>
+          </div>
+
+          <div class="col-md-4">
+            <h4 class="my-3">
+              Significance and extension of the project
+            </h4>
+
+            <p class="text-muted">
+              Used for early prevention. <br> Easy detection. <br> Easy access. <br> No fee or payment.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About-->
+
+    <section class="page-section" id="PROCESS">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="section-heading text-uppercase">
+            Our Process
+          </h2>
+
+          <h3 class="section-subheading text-muted">
+            We thought that we'd provide information as to how we started this
+            website and our journey to how far we've come
+          </h3>
+        </div>
+
+        <ul class="timeline">
+          <li>
+            <div class="timeline-image">
+              <img alt="..." class="rounded-circle img-fluid" src=
+              "https://static.wixstatic.com/media/12b467_a4ceef0f338c41c7885cb083ea36a00f~mv2_d_1742_1743_s_2.png/v1/fill/w_155,h_155,al_c,usm_0.66_1.00_0.01/ai%20camp%20logo.png">
+            </div>
+
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4>
+                  June 2022
+                </h4>
+
+                <h4 class="subheading">
+                  Our Humble Induction
+                </h4>
+              </div>
+
+              <div class="timeline-body">
+                <p class="text-muted">
+                  We were told to create a project on something that was of our
+                  interest. Since diabetes is an on going complication, we
+                  figured that we would create a website to help people
+                  self-diagnose themselves to see if they could be likely to
+                  have diabetes.
+                </p>
+              </div>
+            </div>
+          </li>
+
+          <li class="timeline-inverted">
+            <div class="timeline-image">
+              <img alt="..." class="rounded-circle img-fluid" src=
+               "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png">
+            </div>
+
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4>
+                  Week 1
+                </h4>
+
+                <h4 class="subheading">
+                </h4>
+              </div>
+
+              <div class="timeline-body">
+                <p class="text-muted">
+                  Our very first week at AI camp we were introduced to what we
+                  would be doing. With little knowledge on the subject of
+                  Python, we kicked-off strong! Learning all the basics and
+                  putting them into practice was the first obstacle.
+                </p>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="timeline-image">
+              <img alt="..." class="rounded-circle img-fluid" src=
+              "https://globalplatform.org/wp-content/uploads/2020/11/Silicon-Vendors.png">
+            </div>
+
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4>
+                  Week 2
+                </h4>
+
+                <h4 class="subheading">
+                </h4>
+              </div>
+
+              <div class="timeline-body">
+                <p class="text-muted">
+                  Week 1 had come and gone. Our next step was learning about
+                  models. This included SVMs, logistic regression, random
+                  forests, and more. Based on the data set we chose the first
+                  week we were to use the models we learned about to determine
+                  which model gave the best accuracy.
+                </p>
+              </div>
+            </div>
+          </li>
+
+          <li class="timeline-inverted">
+            <div class="timeline-image">
+              <img alt="..." class="rounded-circle img-fluid" src=
+              "https://th.bing.com/th/id/R.6c8f0a0e377cfa70efcd35ff52893b17?rik=iqhl8JD0f9LLpA&pid=ImgRaw&r=0">
+            </div>
+
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4 class="subheading">
+                  Week 3
+                </h4>
+              </div>
+
+              <div class="timeline-body">
+                <p class="text-muted">
+                  Our final step for week three was application. Based on all
+                  the information from the data we gathered and all the graphs
+                  we made that interpreted the information we had to create a
+                  website. Thus, bringing us to this exact website!
+                </p>
+              </div>
+            </div>
+          </li>
+
+          <li class="timeline-inverted">
+            <div class="timeline-image">
+              <h4>
+                TRY OUR
+                <br>
+                FINAL
+                <br>
+                PRODUCT
+              </h4>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Visualizations -->
+
+    <section class="page-section" id="VISUALIZATIONS">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="section-heading text-uppercase">
+            Visualizations
+          </h2>
+
+          <h3 class="section-subheading text-muted">
+            Given below are some visualizations on possible factors that effect
+            diabetes. Take a look and see what could be some of the effective
+            factors!
+          </h3>
+        </div>
+
+        <!-- Portfolio item 5-->
+
+        <div class="portfolio-item">
+        </div>
+        <f height="600" src=".\static\Age and Gender of Diabetic Patitents.html" title="Age Group and Physical Activity" width="100%"></iframe>
+        <div class="portfolio-caption">
+        <div class= "text-center">
+          <div class="section-subheading text-muted">
+            Is there any age or gender preference when it comes to diabetes?
+          </div>
+        </div>       
+          <!-- age group phys active -->
+          <iframe height="600" src=
+        ".\static\AgeGroups_PhysicalActivity.html" title=
+        "Age Group and Physical Activity" width="100%"></iframe>
+        <div class= "text-center">
+          <div class="section-subheading text-muted">
+            How physically active are people from different age groups?
+        </div>
+          </div>
+        <!-- Portfolio item 2-->
+         <iframe height="600" src=
+        ".\static\BMI_gender.html"  width="100%"></iframe>
+        <div class="portfolio-caption">
+        <div class= "text-center">
+          <div class="section-subheading text-muted">
+            Does body mass affect your chances of getting diabetes?
+          </div>
+        </div>
+      </div>
+
+        <!-- Portfolio item 3-->
+
+         <iframe height="600" src=
+        ".\static\sleep_stress.html" title= "Sleep in relation to stress" width="100%"></iframe>
+        <div class="portfolio-item">
+        </div>
+        <div class="portfolio-caption">
+        <div class= "text-center">
+          <div class="portfolio-caption-subheading text-muted">
+            Does stress affect sleep differently for Diabetic patients?
+          </div>
+        </div>
+
+
+
+        
+        <!-- Portfolio item 6-->
+
+        <div class="portfolio-item">
+        </div>
+                <iframe height="600" src=
+        ".\static\Smoking.html" width="100%"></iframe>
+          
+          
+          <iframe height="600" src=".\static\JunkFood_age.html"width="100%"></iframe>
+          
+          <iframe height="600" src=".\static\Alcohol_age.html" width="100%"></iframe>
+            
+          
+          
+        <div class="portfolio-caption">
+          <div class= "text-center">
+            <div class="section-subheading text-muted">
+            Does the consumption of junk food, alcohol, and smoking affect
+            other factors? Look at the graphs and see it yourself!
+          </div>
+         </div>
+        </div>
+    </section>
+
+
+     <!-- Model description and stuff-->
+<div class= "text-center">
+    <section class="page-section" id="MODELS">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="section-heading text-uppercase">
+            Our Models
+          </h2>
+
+          <h3 class="section-subheading text-muted">
+            How it all works, explanations and more on our models.
+          </h3>
+        <div class="text-center">
+  <!--portfolio item 1 for models (logistic regression)-->
+      <div class="portfolio-item">
+        </div>
+          <img alt="..." class="img-fluid" src="https://cdn.discordapp.com/attachments/932838701724221471/989633700616622131/log.png">
+        <div class="portfolio-caption">
+          <div class="portfolio-caption-heading">Logistic regression</div>
+
+          <div class="portfolio-caption-subheading text-muted">
+            Logistic regression calculates the probability of an event occurring using a given data set of independent variables. The dependent variable's value between 0 and 1.
+
+          </div>
+        </div>
+
+            <br>
+<!--portfolio item 2 for models (random forest)-->
+
+
+        <div class="portfolio-item">
+              </div>
+             <img alt="..." class="img-fluid" src="https://cdn.discordapp.com/attachments/932838701724221471/989633700960546926/rfc.png">
+        <div class="portfolio-caption">
+              <div class="portfolio-caption">
+                <div class="portfolio-caption-heading">Random forest</div>
+
+                <div class="portfolio-caption-subheading text-muted">
+Random forests is an ensemble learning method for classification and regression problems. It operates through feeding many decision trees and averaging out the outputs for the final prediction.
+                </div>
+              </div>
+            <br>
+          <!--portfolio item 3 for models (SVM)-->
+
+              </div>
+              <img alt="..." class="img-fluid" src="https://cdn.discordapp.com/attachments/932838701724221471/989633701694562304/svm.png">
+                <div class="portfolio-caption-heading">Support Vector Machine(SVM)</div>
+
+                <div class="portfolio-caption-subheading text-muted">Support-Vector Machines are supervised learning models with associated learning algorithms that analyze data for classification and regression problems. They use hyperplanes or lines that separate the data into two categories.
+
+
+                </div>
+              </div>
+            <br>
+<!--portfolio item 4 for models (SVM with Standar scaler)-->
+
+
+      <div class="portfolio-item">
+              </div>
+                        <img alt="..." class="img-fluid" src="https://cdn.discordapp.com/attachments/932838701724221471/989633701400940604/svm_scale.png">
+        <div class="portfolio-caption">
+              <div class="portfolio-caption">
+                <div class="portfolio-caption-heading">SVM with standar scaler</div>
+
+                <div class="portfolio-caption-subheading text-muted">
+                  Works similarly to a regular SVM model but converts all values to a scale of 0 to 1.
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </section>
+
+<!--results and conclusion-->
+
+    <section class="page-section" id="RESULTS">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="section-heading text-uppercase">
+            Results and conclusion
+          </h2>
+          <h3 class="section-subheading text-muted">
+            <br> Our Accuracy and F1 scores</br>
+    <div class="row">
+             <iframe height="600" src=".\static\Accuracy_and_F1_scores.html" width="100%"></iframe>
+             <iframe height="600" src=".\static\Accuracy_scores.html" width="100%"></iframe>
+            </div>
+          </div>
+
+      <div class="text-center">
+              <p class="text-muted">
+                As you can see, our models have high accuracies and F1 scores, with the SVM model having the best performance. This means our product's predictions will be highly accurate. However, please take each prediction with a grain of salt.
+              </p>
+      </div>
+          </div>
+        </section>
+
+         <!-- Self-Evaluation-->
+        <section class="page-section" id="EVALUATION">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Self Evaluation</h2>
+                    <h3 class="section-subheading text-muted">  Make sure to fill out the information below to receive your results!</h3>
+                </div>
+          <div class="py-5">
+            <div class="container">
+              <div class="row align-items-center">
+              </div>
+            </div>
+          </div>
+              </div>
+              <!-- * * * * * * * * * * * * * * *-->
+              <!-- * * SB Forms Contact Form * *-->
+              <!-- * * * * * * * * * * * * * * *-->
+              <!-- This form is pre-integrated with SB Forms.-->
+              <!-- To make this form functional, sign up at-->
+              <!-- https://startbootstrap.com/solution/contact-forms-->
+              <!-- to get an API token!-->
+               <div class="text-center">
+              <form action = "", method = "post">
+                <div class="row align-items-stretch mb-5">
+
+                        <!--AGE-->
+            <div class=input-field col s4>
+            <label for =”age”><b>Age</b></label>
+            <br>
+            <input list=”age” name=”age” placeholder="Choose range">
+            <datalist id=”age”>
+              <option value= “lessthan40”></option>
+              <option value= “40-49”></option>
+              <option value= “50-59”></option>
+              <option value= "60andolder" ></option>
+            </datalist>
+                                      <!--Gender-->
+
+            <div class=input-field col s4>
+            <label for ="Gender"><b>Gender</b></label>
+            <br>
+            <input list="Gender" name="Gender" placeholder="Male or female">
+            <datalist id="Gender">
+              <option value= "Female"></option>
+              <option value="Male"></option>
+            </datalist>
+            </div>
+                                    <!--Family diabetes-->
+            <div class=input-field col s4>
+            <label for ="Family Diabetes"><b>Family Diabetes</b></label>
+            <br>
+            <input list="Family_Diabetes" name="Familydiabetes" placeholder="fam history of diabetes?">
+            <datalist id="Family_Diabetes">
+              <option value= "yes"></option>
+              <option value="no"></option>
+            </datalist>
+            </div>
+
+                                       <!--High Blood Pressure-->
+            <div class=input-field col s4>
+              <label for ="Blood Pressure"><b>High blood Pressure</b></label>
+              <br>
+              <input list="Blood Pressure" name="Blood Pressure" placeholder="high BP?">
+              <datalist id="Blood Pressure">
+              <option value= "yes"></option>
+              <option value="no"></option>
+            </datalist>
+              </div>
+
+                                       <!--Physical activity-->
+            <div class=input-field col s4>
+            <label for ="Physical Activity"><b>Amount of Physical Activity (walk/run)</b></label>
+            <br>
+            <input list="PhysicallyActive" name="PhysicallyActive" placeholder=" Amount of time in hrs">
+            <datalist id="PhysicallyActive">
+              <option value= "one hr or more"></option><option value="less than half an hr"></option><option value="more than half an hour"></option><option value="none"></option>
+            </datalist>
+                                      <!-- BMI-->
+                              <div class=input-field col s4>
+                              <label for="BMI"><b>BMI</b></label><br>
+                             <input id="BMI" name="BMI" type="number" placeholder="Enter BMI" class="validate">
+                             </div>
+
+                                     <!--Smoke-->
+            <div class=input-field col s4>
+              <label for ="Smoker"><b>Smoke Intake</b></label>
+              <br>
+              <input list="Smoker" name="Smoker" placeholder="Do you smoke?">
+              <datalist id="Smoker">
+                <option value= "yes"></option><option value="no"></option>
+              </datalist>
+              </div>
+                                  <!--Alcohol-->
+              <div class=input-field col s4>
+            <label for ="Alcohol"><b>Alcohol consumption</b></label>
+            <br>
+            <input list="Alcohol" name="Alcohol" placeholder="Do you drink?">
+            <datalist id="Alcohol"><option value= "yes"></option><option value= "no"></option>
+            </datalist>
+
+                                  <!--sleep-->
+            <div class=input-field col s4>
+            <label for ="Sleep Quality"><b>Hours of Sleep</b></label>
+            <br>
+            <input id="SoundSleep" name="Sleep Quality" type="number" placeholder="Amount of Sleep in hrs" class="validate">
+            <datalist id="SleepQuality">
+            </datalist>
+
+                                <!--soundsleep-->
+            <div class=input-field col s4>
+            <label for ="Sound sleep"><b>Hours of sound sleep</b></label>
+            <br>
+            <input id="Sound sleep" name="Sound sleep" type="number" placeholder="Quality/deep sleep in hrs" class="validate">
+            <datalist id="Sound sleep">
+            </datalist>
+                                <!--Medicine intake-->
+
+            <div class=input-field col s4>
+            <label for ="Regular Medicine"><b>Regular intake of medicine?</b></label>
+            <br>
+            <input list="Regular Medicine" name="Regular Medicine" placeholder="Intake daily medicine?">
+            <datalist id="Regular Medicine">
+              <option value= "yes"></option><option value="no"></option>
+            </datalist>
+            </div>
+                              <!--Junk food intake-->
+            <div class=input-field col s4>
+            <label for ="Junk Food"><b>Junk food consumption</b></label>
+            <br>
+            <input list="JunkFood" name="JunkFood" placeholder="Frequency">
+            <datalist id="JunkFood"><option value= "occasionally"></option><option value="very often"></option><option value="often"></option><option value="always"></option>
+            </datalist>
+
+                               <!--Stress levels-->
+            <div class=input-field col s4>
+            <label for ="Stress"><b>Stress Level</b></label>
+            <br>
+            <input list="Stress" name="Stress" placeholder="amount of stress">
+            <datalist id="Stress"><option value= "sometimes"></option><option value="not at all"></option><option value="very often"></option><option value="always"></option>
+            </datalist>
+
+                              <!--BPLevel-->
+            <div class=input-field col s4>
+            <label for ="BPLevel"><b>Blood Pressure Level</b></label>
+            <br>
+            <input list="BPLevel" name="BPLevel" placeholder="High, normal or low">
+            <datalist id="BPLevel">
+              <option value= "high"></option>
+              <option value="normal"></option>
+              <option value="low"></option>
+            </datalist>
+            </div>
+
+                              <!--Pregnancies-->
+              <div class=input-field col s4>
+            <label for ="Pregnancies"><b>Number of Pregnancies</b></label>
+            <br>
+             <input id="Pregnancies" name="Pregnancies" type="number" placeholder="Enter Pregnancies" class="validate">
+              </div>
+
+                       <!--Pdiabetes-->
+            <div class=input-field col s4>
+            <label for ="Gestation diabetes"><b>Gestation diabetes</b></label>
+            <br>
+            <input list="Gestation diabetes" name="Gestation diabetes" placeholder="yes or no">
+            <datalist id="Gestation diabetes">
+              <option value= "yes"></option><option value="no"></option>
+            </datalist>
+            </div>
+
+                              <!--Uriation Freq-->
+            <div class=input-field col s4>
+            <label for ="Uriation Freq"><b>Frequency of urination</b></label>
+            <br>
+            <input list="Uriation Freq" name="Urination Freq" placeholder="Pick Frequency">
+            <datalist id="Uriation Freq">
+              <option value= "not much"></option><option value="quite often"></option>
+            </datalist>
+            </div>
+
+
+
+                <!-- Submit success message-->
+                <!---->
+                <!-- This is what your users will see when the form-->
+                <!-- has successfully submitted-->
+
+                <!-- Submit Button-->
+
+                <div class="text-center">
+                  <button class=
+                  "submitButton" type="submit">evaluate</button>
+                  <br>
+                  <p><h5>{{prediction}}</h5></p>
+                </div>
+              </form>
+            </div>
+            </div>
+    </section>
+
+
+
+<!-- Team-->
+
+    <section class="page-section" id="TEAM">
+            <div class="container">
+              <div class="text-center">
+                <h2 class="section-heading text-uppercase">
+                  Our Amazing Team
+                </h2>
+
+                <h3 class="section-subheading text-muted">
+                   About the creators: With little knowledge on coding, the "Elastic Searchers" (as they are called) had one task in mind. How could coding help in real-world applications? Well, three weeks later, equipped with the correct data set and sufficient information, our team has been able to create this amazing website which is to aid others in being able to detect whether they may have diabetes. Zero payment is needed.We hope our website is of great help to you! 
+                </h3>
+              </div>
+
+              <div class="row">
+                <div class="col-lg-4">
+                  <div class="team-member">
+                    <img alt="..." class="mx-auto rounded-circle" src=
+                    "https://cdn.discordapp.com/attachments/932838701724221471/989258264522932344/IMG_9540.jpg">
+                    <h4>
+                      Faye Crow
+                    </h4>
+
+                    <p class="text-muted">
+                      Student who wants to explore nuances and improve public health.
+                    </p>
+                    <a ></a>
+                  </div>
+                </div>
+
+                <div class="col-lg-4">
+                  <div class="team-member">
+                    <img alt="..." class="mx-auto rounded-circle" src=
+                    ".\static\images\10.jpg">
+                    <h4>
+                      Stephen Corro
+                    </h4>
+
+                    <p class="text-muted">
+                     New to code, but eager to learn and experiment.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="col-lg-4">
+                  <div class="team-member">
+                    <img alt="..." class="mx-auto rounded-circle" src=
+                    ".\static\images\e.jpg">
+                    <h4>
+                      Brenda Rivera
+                    </h4>
+
+                    <p class="text-muted">no idea what I'm doing, but happy to be here</p>
+                    <i></i>
+                  </div>
+                </div>
+
+                <div class="col-lg-4">
+                  <div class="team-member">
+                    <img alt="..." class="mx-auto rounded-circle" src=
+                    ".\static\images\98.jpg">
+                    <h4>
+                      Isaac  Long
+                    </h4>
+
+                    <p class="text-muted">
+            A new programmer who wants to make a difference and help people with diabetes
+                    </p>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="team-member">
+                    <img alt="..." class="mx-auto rounded-circle" src=
+                    ".\static\images\8.jpg">
+                    <h4>
+                      Besty Perez
+                    </h4>
+
+                    <p class="text-muted">
+            New to programming and applying knowledge, so people don't have to pay to know their state of health.
+                    </p>
+
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="team-member">
+                    <img alt="..." class="mx-auto rounded-circle" src=
+                    ".\static\images\9.jpg">
+                    <h4>
+                      Emma Chen
+                    </h4>
+
+                    <p class="text-muted">
+            Instructor
+                    </p>
+                  </div>
+                </div>
+          <!-- Clients-->
+
+          <div class="py-5">
+            <div class="container">
+              <div class="row align-items-center">
+              </div>
+            </div>
+          </div>
+          <!-- Footer-->
+
+          <footer class="footer py-4">
+            <div class="container">
+              <div class="row align-items-center">
+                <div class="col-lg-4 text-lg-start">
+                  Copyright © AI CAMP 2022
+                </div>
+
+                <div class="col-lg-4 my-3 my-lg-0">
+                </div>
+
+                <div class="col-lg-4 text-lg-end">
+                  <a class="link-dark text-decoration-none me-3" href=
+                  "#!">Privacy Policy</a> <a class=
+                  "link-dark text-decoration-none" href="#!">Terms of Use</a>
+                </div>
+              </div>
+            </div>
+          </footer>
+      </div>
+  </section>
+
+
+      <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+      <!-- Core theme JS-->
+
+    <script src="static/js/scripts.js"></script>
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+
+<!-- * *                               SB Forms JS                               * *-->
+
+<!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+
+    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script> 
+            
+
+  </body>
+</html>
